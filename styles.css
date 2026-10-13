@@ -1,0 +1,27 @@
+/* Styles for Scene Notes to Fountain. Obsidian loads this file while the plugin is enabled. */
+.scene-notes-to-fountain .snf-notes {
+	max-height: 40vh;
+	overflow-y: auto;
+	border: var(--border-width) solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	padding: 0 var(--size-4-2);
+}
+
+.scene-notes-to-fountain .snf-status {
+	color: var(--text-muted);
+}
+
+.scene-notes-to-fountain .snf-errors {
+	color: var(--text-error);
+}
+
+.scene-notes-to-fountain .snf-text {
+	max-height: 30vh;
+	overflow: auto;
+	padding: var(--size-4-2);
+	background-color: var(--background-secondary);
+	border-radius: var(--radius-s);
+	font-family: var(--font-monospace);
+	white-space: pre-wrap;
+	user-select: text;
+}
