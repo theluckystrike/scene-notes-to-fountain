@@ -3,6 +3,7 @@ import { sponsorsSettingItems } from './license/github-obsidian';
 import { DEFAULT_MAPPING } from './fountain';
 import { PRO_UI, isPro } from './pro';
 import type SceneNotesToFountainPlugin from './main';
+import { helloSettingItems } from './hello/settings';
 
 /** A saved selection: notes of one folder in a set order (Pro). */
 export interface NoteGroup {
@@ -65,6 +66,11 @@ export class SceneNotesToFountainSettingTab extends PluginSettingTab {
 	}
 
 	getSettingDefinitions(): SettingDefinitionItem[] {
+		// The product rows, then the "More from NoteMods" card (packages/hello).
+		return [...this.productSettingDefinitions(), ...helloSettingItems()];
+	}
+
+	productSettingDefinitions(): SettingDefinitionItem[] {
 		const pro = isPro();
 		const lock = pro ? '' : ' Without Pro, the plugin ignores this value and uses the default.';
 		return [

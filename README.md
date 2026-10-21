@@ -81,6 +81,8 @@ Select Cancel or close the window to stop without a file.
 
 ## Settings
 
+After a minor or major update, this plugin opens one What's new tab in the background. The tab and settings card suggest other NoteMods plugins and Zovo Chat and link to notemods.com for feedback ([privacy](https://notemods.com/privacy/)). The tab sends no data. Turn the tab off in Settings.
+
 The settings tab has three parts.
 
 | Setting | What it does |
