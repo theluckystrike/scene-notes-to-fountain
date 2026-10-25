@@ -1,5 +1,6 @@
 {
 	"name": "scene-notes-to-fountain",
+	"repository": {"type": "git", "url": "theluckystrike/scene-notes-to-fountain.git"},
 	"version": "1.1.0",
 	"private": true,
 	"description": "Convert planning notes into an ordered Fountain outline with scene headings and summaries.",
