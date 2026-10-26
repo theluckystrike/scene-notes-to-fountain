@@ -1,9 +1,9 @@
 {
 	"id": "scene-notes-to-fountain",
 	"name": "Scene Notes to Fountain",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"changes": [
-		"New Send feedback command. It opens a page where you can report a problem or suggest an idea."
+		"The Pro notice for saved note groups now has a Sponsor on GitHub button."
 	],
 	"tip": "If a note has no slugline property, its file name becomes the scene heading.",
 	"thanks": "Hi, I am Michael, a solo developer in Poland. Scene Notes to Fountain is one of over 100 small plugins that I make. Thank you for using it with your writing.",

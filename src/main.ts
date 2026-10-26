@@ -3,7 +3,7 @@ import type { SponsorsManager } from './license/index';
 import { createGitHubSponsors } from './license/github-obsidian';
 import { DEFAULT_MAPPING, buildPlan, cleanFileName, errorText, freePath, sourcesUnchanged, type Mapping, type NoteError, type NoteInput, type Plan } from './fountain';
 import { ExportModal } from './modal';
-import { SPONSORS, bindPro, isPro, resetPro } from './pro';
+import { SPONSORS, bindPro, isPro, resetPro, proNotice } from './pro';
 import { DEFAULT_FILE_NAME, DEFAULT_SETTINGS, SceneNotesToFountainSettingTab, normalizeSettings, type SceneNotesToFountainSettings } from './settings';
 import { setupHello } from './hello/index';
 import WHATS_NEW from './whats-new.json';
@@ -212,5 +212,5 @@ export default class SceneNotesToFountainPlugin extends Plugin {
 }
 
 export function needsPro(feature: string): void {
-	new Notice(`${feature} is a Pro feature. Sponsor on GitHub, then sign in from the plugin settings.`);
+	proNotice(`${feature} is a Pro feature.`);
 }
