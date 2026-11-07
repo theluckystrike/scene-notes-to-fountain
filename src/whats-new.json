@@ -1,8 +1,9 @@
 {
 	"id": "scene-notes-to-fountain",
 	"name": "Scene Notes to Fountain",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"changes": [
+		"The Pro notice of Scene Notes to Fountain now says that one payment turns on Pro in every NoteMods plugin.",
 		"The Pro notice for saved note groups now has a Sponsor on GitHub button."
 	],
 	"tip": "If a note has no slugline property, its file name becomes the scene heading.",
